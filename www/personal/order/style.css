@@ -1,0 +1,47 @@
+.order-form .tabs-content .fields-block .label-input-block:first-child{
+    width: auto;
+}
+.order-form .tabs-content .fields-block .label-input-block:nth-child(5){
+    width: 100%;
+}
+main .wrapper-content {
+    overflow: hidden;
+}
+#auth_form {
+    transition: .4s;
+    top: 0;
+}
+.order-form {
+    transition: .4s;
+    position: relative;
+    top: 0;
+}
+#auth_form.off, .order-form.slide {
+    top: -460px;
+}
+#auth-show {
+    display: none;
+}
+.label-input-block .btn {
+    margin-left: 15px;
+}
+.order-form .order-form--block .label-input-block {
+    background: white;
+}
+#REGISTER_FORM .sms-block {
+    position: relative;
+    z-index: -1;
+    top: -130px;
+    transition: .3s;
+}
+#REGISTER_FORM .sms-block.active {
+    top: 0px;
+    z-index: 2;
+}
+#REGISTER_FORM .contact-info {
+    margin-bottom: -160px;
+    transition: .3s;
+}
+#REGISTER_FORM .contact-info.sms {
+    margin-bottom: 0px;
+}

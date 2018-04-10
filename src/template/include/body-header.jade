@@ -1,0 +1,146 @@
+header#index
+    .black-top-block--wrapper.responsive-hide
+        .black-top-block
+            .black-top-block-menu
+                ul.menu-block
+                    li.menu-element
+                        a(href="#") О компании
+                    li.menu-element
+                        a(href="#") Вопросы – ответы
+                    li.menu-element
+                        a(href="#") Отзывы
+                    li.menu-element
+                        a(href="#") Наши адреса
+            .activity-user-block
+                .social-links-block
+                    span.social-links-title Мы в соц.сетях
+                    a.fb(href="https://facebook.com/")
+                    a.vk(href="https://vk.com/")
+                    //a.ok(href="https://ok.ru/")
+                .city-block
+                    span.city-title Ваш город
+                    .city-block_select
+                        a(href="index.html").active Санкт-Петербург
+                            | <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5">
+                            |     <path fill="#009ACE" fill-rule="evenodd" d="M0 .643L4 4.5 8 .643 7.333 0 4 3.214.667 0z"/>
+                            | </svg>
+                        .hover
+                            | <!-- TODO: найти всплывашку выбора городов -->
+                .manage-panel
+                    .manage-panel_lang
+                        a(href="start.html").active ENG
+                            | <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5">
+                            |     <path fill="#009ACE" fill-rule="evenodd" d="M0 .643L4 4.5 8 .643 7.333 0 4 3.214.667 0z"/>
+                            | </svg>
+                        ul.hover.hide
+                            li
+                                a(href="start.html?lang=ru") RU
+
+        // black-top-block end
+
+    .functions-block--wrapper
+        .functions-block
+            .burger-menu-button
+                a(href="#")
+                    img(src="img/burger.svg")
+            .functions-logo
+                a(href="/")
+                    img(src="img/logo.svg")
+            .functions-menu
+                ul.menu-block
+                    li.menu-element
+                        a(href="#") Химчистка и стирка
+                    li.menu-element
+                        a(href="#") Озонирование
+                    li.menu-element
+                        a(href="#") Ремонт одежды
+                    li.menu-element
+                        a(href="#") Сопутствующие товары
+            .functions-search
+                form(action="", method="", data-submit="")
+                    input(type="submit", value="", class="search_submit")
+                    input(type="text", name="", value="", placeholder="Введите поисковой запрос", class="search_input search_input_hide")
+            .functions--wrapper
+                .functions-contacts
+                    .time-block
+                        .time-block-icon
+                            | <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                            |     <path fill="#D8D8D8" fill-rule="evenodd" d="M7.5 15a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15zm0-1a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13zM7 2h1v5H7V2zm0 5h4v1H7V7z"/>
+                            | </svg>
+                        .time-block-wrapper.hide
+                    .phone
+                        a(href="tel:79119876554") +7 911 987-65-54
+                    .call-me-link
+                        a(href="#recallme", data-popup) Обратный звонок
+                .functions-personal
+                    .authorizire-me-link
+                        a(href="#authorizire", data-popup)
+                            img(src="img/personal.svg")
+                            span Войти
+                    .personal-information.hide
+                        a(href="/personal/") Личный кабинет
+                .functions-cart
+                    .cart-link.empty
+                        a(href="#cart", data-slide)
+                            img(src="img/cart.svg")
+                            span Корзина
+
+        // function-block end
+
+    .slide__menu.slide__menu_hide
+        button.btn_close &#10006
+        .slide__menu_search
+            form(action="", method="", data-submit="")
+                input(type="text", name="", value="", placeholder="Введите поисковой запрос", class="search_input")
+                input(type="submit", value="", class="search_submit")
+        .slide__menu_wrapper
+            ul.slide__menu_top
+                li
+                    a(href="#") Химчистка и стирка
+                li
+                    a(href="#") Озонирование
+                li
+                    a(href="#") Ремонт одежды
+                li
+                    a(href="#") Сопутствующие товары
+            ul.slide__menu_bottom
+                li
+                    a(href="#") О компании
+                li
+                    a(href="#") Вопросы – ответы
+                li
+                    a(href="#") Отзывы
+                li
+                    a(href="#") Наши адреса
+                li
+                    a(href="#") Корпоративным клиентам
+                li
+                    a(href="#") Полезная информация
+                li
+                    a(href="#") Карьера
+            .slide__menu_recall
+                a(href="#recallme", data-popup) Обратный звонок
+            .slide__menu_social-links-block
+                span.social-links-title Мы в соц.сетях
+                a.fb(href="https://facebook.com/")
+                a.vk(href="https://vk.com/")
+                a.ok(href="https://ok.ru/")
+            .slide__menu_city-block
+                span Ваш город
+                .city-block_select
+                    a(href="index.html").active Санкт-Петербург
+                        | <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5">
+                        |     <path fill="#009ACE" fill-rule="evenodd" d="M0 .643L4 4.5 8 .643 7.333 0 4 3.214.667 0z"/>
+                        | </svg>
+                    .hover
+                        | <!-- TODO: найти всплывашку выбора городов -->
+            .slide__menu_manage-panel_lang
+                span Язык
+                a(href="start.html").active ENG
+                    | <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5">
+                    |     <path fill="#009ACE" fill-rule="evenodd" d="M0 .643L4 4.5 8 .643 7.333 0 4 3.214.667 0z"/>
+                    | </svg>
+                ul.hover.hide
+                    li
+                        a(href="start.html?lang=ru") RU
+// header end

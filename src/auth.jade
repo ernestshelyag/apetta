@@ -1,0 +1,43 @@
+extends template/template
+
+block title
+    title Apetta. Оформление заказа.
+
+block content
+    .section-page
+        h1 Авторизация
+    .wrapper-content
+        // #WORKAREA#
+        .row
+            .item7
+                .auth-block
+                    .social-network__wrap
+                        .title Войти через социальную сеть
+                        .links
+                            a(href="")
+                                img(src="img/icon-network/fb.svg")
+                            a(href="")
+                                img(src="img/icon-network/vk.svg")
+                            a(href="")
+                                img(src="img/icon-network/ok.svg")
+                    .email-password__wrap
+                        .title Зарегистроваться по номеру телефона
+                        form(action="", method="post")
+                            input(type="text", name="email", placeholder="Телефон", value="")
+                            .submit-form__wrap
+                                input.btn(type="submit", name="submit", value="Зарегистрироваться")
+                            span.links Есть аккаунт?
+                                a(href="") Войти
+
+        .red-border_block
+            .title В чем плюсы регистрации?
+            .pluses_block
+                .plus_item
+                    img(src="img/balls.svg" alt="")
+                    p Копите бонусные баллы и получайте скидки
+                .plus_item
+                    img(src="img/secmetr.svg" alt="")
+                    p Оформляйте заказ быстрее и проще
+                .plus_item
+                    img(src="img/medal.svg" alt="")
+                    p Станьте членом нашего клуба и участвуйте в акциях

@@ -1,0 +1,100 @@
+extends template/template
+
+block title
+    title Apetta. Сеть федеральных химчисток. Интернет-заказ химчистки любой вида товара.
+
+block content
+    .section-page
+        h1.caption Отзывы
+    .wrapper-content
+        // #WORKAREA#
+        .review__wrapper
+            .review__content
+                h2 Отзывы покупателей
+                ul
+                    li.review__client-number_1
+                        .review__client-info
+                            .review__ava
+                                img(src="img/content/review_test.jpg")
+                            .review__name-rating
+                                span.review__name Ирина
+                                .review__rating
+                                    .fill
+                                    .fill
+                                    .fill
+                                    .fill
+                                    .nofill
+                            span.review__date Написано 13.02.2017
+                        p.review__text Ежегодно  доверяют свои вещи 1 500 000 Клиентов, которые остаются довольны качеством выполненных услуг. В нашей компании работают высококвалифицированные специалисты, которые проходят мастер-классы с европейскими мастерами, осваивают новые технологии и методики, в общем, выполняют свою работу на высоком уровне.
+                        .review__answer
+                            h3
+                            p
+                    li.review__client-number_2
+                        .review__client-info
+                            .review__ava
+                                span.first-letter в
+                            .review__name-rating
+                                span.review__name Виталий
+                                .review__rating
+                                    .fill
+                                    .fill
+                                    .nofill
+                                    .nofill
+                                    .nofill
+                            span.review__date Написано 13.02.2017
+                        p.review__text В нашей компании работают высококвалифицированные специалисты, которые проходят мастер-классы с европейскими мастерами, осваивают новые технологии и методики, в общем, выполняют свою работу на высоком уровне.
+                        .review__answer
+                            h3 Ответ сети химчисток Apetta
+                            p В нашей компании работают высококвалифицированные специалисты, которые проходят мастер-классы с европейскими мастерами, осваивают новые технологии и методики
+                    li.review__client-number_3
+                        .review__client-info
+                            .review__ava
+                                span.first-letter н
+                            .review__name-rating
+                                span.review__name Никита
+                                .review__rating
+                                    .fill
+                                    .fill
+                                    .fill
+                                    .nofill
+                                    .nofill
+                            span.review__date Написано 13.02.2017
+                        p.review__text Ежегодно  доверяют свои вещи. Клиентов, которые остаются довольны качеством выполненных услуг. В нашей компании работают высококвалифицированные специалисты, которые проходят мастер-классы с европейскими мастерами, осваивают новые технологии и методики, в общем, выполняют свою работу на высоком уровне.Если у Вас остались сомнения, то Вы можете доверить свои вещи «Персональному технологу» - это специалист, который будет заниматься только Вашим заказом.При сдаче вещей в обработку оформляется договор-квитанция с полным описанием изделия; при наличии маркировки с символами по уходу за изделием мы гарантируем, что не нарушим рекомендации фирмы-производителя.При отсутствии маркировки фирмы-производителя о способе чистки, вещь обрабатывается в соответствии с ГОСТ Р 51108-97.
+                        .review__answer
+                            h3
+                            p
+                    li.review__client-number_4
+                        .review__client-info
+                            .review__ava
+                                span.first-letter м
+                            .review__name-rating
+                                span.review__name Мария
+                                .review__rating
+                                    .fill
+                                    .fill
+                                    .fill
+                                    .fill
+                                    .nofill
+                            span.review__date Написано 13.02.2017
+                        p.review__text Ежегодно  доверяют свои вещи 1 500 000 Клиентов, которые остаются довольны качеством выполненных услуг. В нашей компании работают высококвалифицированные специалисты, которые проходят мастер-классы с европейскими мастерами, осваивают новые технологии и методики, в общем, выполняют свою работу на высоком уровне.
+                        .review__answer
+                            h3
+                            p
+            .review__form
+                form
+                    div
+                        p Оставьте отзыв
+                        input(type='text', name='nick', placeholder='Ваше имя')
+                        textarea(name='review', placeholder='Текст отзыва')
+                        .rating
+                            input#star5(type='radio', name='rating', value='5')
+                            label(for='star5')
+                            input#star4(type='radio', name='rating', value='4')
+                            label(for='star4')
+                            input#star3(type='radio', name='rating', value='3')
+                            label(for='star3')
+                            input#star2(type='radio', name='rating', value='2')
+                            label(for='star2')
+                            input#star1(type='radio', name='rating', value='1')
+                            label(for='star1')
+                        button(type='submit') Отправить

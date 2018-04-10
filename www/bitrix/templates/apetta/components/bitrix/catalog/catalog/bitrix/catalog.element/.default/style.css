@@ -1,0 +1,88 @@
+.radiobutton input[type=checkbox] + label.css-label{
+    font-size: 1.4rem;
+    line-height: 23px;
+    display: inline-block;
+    height: 18px;
+    padding-left: 25px;
+    cursor: pointer;
+    vertical-align: middle;
+    color: #009ace;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.radiobutton input[type=checkbox]:checked + label.css-label::before {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    bottom: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    content: "";
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 154, 206);
+    border-image: initial;
+    border-radius: 50%;
+    background: rgb(0, 154, 206);
+}
+
+.radiobutton input[type=checkbox]{
+    position: absolute;
+    z-index: -1000;
+    left: -1000px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+.content-block__price , .content-block__html{
+    max-width: 300px;
+}
+
+.content-block__price .content-block__description
+{
+    margin-top: 20px;
+}
+.popup_item .content-block .content-block__html img{
+    max-width: 300px;
+}
+.popup_item .content-block .content-block__price .price , .popup_item .content-block .content-block__price .old-price{
+    display: inline-block;
+    line-height: 2rem;
+    vertical-align: bottom;
+}
+
+.product-cart__generating .variable_content .radiobuttons_block{
+    justify-content: flex-start !important;
+}
+.product-cart__generating .variable_content .radiobuttons_block .radiobutton_image .image_block{
+    margin-top: 27px;
+}
+.related-products .related-products__items{
+    justify-content:flex-start !important;
+}
+.properties_block .count_block .minus:hover , .properties_block .count_block .plus:hover{
+    cursor: pointer;
+}
+.related-products__items .product_item a{
+    margin: 0 auto;
+}
+.related-products__items .prices{
+    text-align: center;
+}
+main .product-cart__buyit .buyit__content .properties_block .property_row .value{
+    line-height: 50px !important;
+}
+
+form[name='SIMPLE_FORM_6'] .notetext{
+    color: green;
+}
+form[name='SIMPLE_FORM_6'] br{
+    display: none;
+}

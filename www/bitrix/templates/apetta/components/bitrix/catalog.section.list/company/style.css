@@ -1,0 +1,37 @@
+main .img_block{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.img_block img{
+    width: 250px;
+    padding: 5px;
+}
+.diplom{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.diplom a{
+    display: block;
+    width: 180px;
+    margin:5px;
+}
+.diplom img{
+    width: 180px;
+}
+.main-content__wrap .main-content_block .digits_block .digit_item .description {
+    min-height: 80px;
+}
+
+
+
+@media screen and (max-width: 786px) {
+    main .wrapper-content .img_block{
+        justify-content:center;
+    }
+}

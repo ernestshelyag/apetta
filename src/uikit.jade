@@ -1,0 +1,73 @@
+//
+   Created by ncheremisin on 22.05.2017.
+
+extends template/template
+
+block title
+    title Apetta. UI Kit
+
+block content
+    .wrapper-content
+        h1 Заголовок 1-го уровня
+        h2 Заголовок 2-го уровня
+        h3 Заголовок 2-го уровня
+        h4 Заголовок 2-го уровня
+        h5 Заголовок 2-го уровня
+        p В нашей компании работают высококвалифицированные специалисты, которые проходят мастер-классы с европейскими мастерами, осваивают новые технологии и методики
+        .block
+            img(src="", alt="Описание к картинке")
+        .block
+            img.circle(src="", alt="Описание к картинке")
+        .block
+            a(href="") apetta@apetta.ru
+        .block
+            a.btn--blue(href="", data-popup)
+        p.error Нужно указать email
+        p.warning Нужно указать email
+        p.success Нужно указать email
+        .block
+            form.mch-form(action="", method="GET")
+                input(type="hidden", name="", value="")
+                input(type="text", name="", value="", placeholder="Телефон")
+                input(type="checkbox", name="", value="")
+                .rating-checkbox
+                    input(type="hidden", name="rating", value="")
+                    .rating-checkbox-block
+                        a.rating-checkbox-icon.active(href="#", data-hidden-val="1")
+                        a.rating-checkbox-icon.active(href="#", data-hidden-val="2")
+                        a.rating-checkbox-icon(href="#", data-hidden-val="3")
+                        a.rating-checkbox-icon(href="#", data-hidden-val="4")
+                        a.rating-checkbox-icon(href="#", data-hidden-val="5")
+                input(type="radio", name="", value="")
+                textarea(name="")
+                select(name="")
+                    option(value="1") Все станции метро
+                input(type="submit", name="", value="")
+                a.btn--blue(href="", data-send)
+        .block
+            .text-title Apetta в г. Санкт-Петербурге- 27 адресов:
+        .block
+            ul
+                li г. Москва,Ленинский пр., 101;
+                li г. Москва,Ленинский пр., 102;
+                li г. Москва,Ленинский пр., 103;
+        .block
+            .rating-block
+                span.rating-checkbox-icon.active
+                span.rating-checkbox-icon.active
+                span.rating-checkbox-icon
+                span.rating-checkbox-icon
+                span.rating-checkbox-icon
+        .block
+            .small-text-title Виталий, Ответ от сети химчисток Apetta
+            .small-text-content В нашей компании работают высококвалифицированные специалисты, которые проходят мастер-классы с европейскими мастерами, осваивают новые технологии и методики
+        .block
+            blockquote
+                .small-text-title Виталий, Ответ от сети химчисток Apetta
+                .small-text-content В нашей компании работают высококвалифицированные специалисты, которые проходят мастер-классы с европейскими мастерами, осваивают новые технологии и методики
+        .block
+            .letter-in-circle--red В
+            .letter-in-circle--purple Н
+            .letter-in-circle--green М
+
+

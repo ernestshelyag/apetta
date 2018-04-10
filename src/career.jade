@@ -1,0 +1,104 @@
+extends template/template
+
+block title
+    title Apetta. Сеть федеральных химчисток. Интернет-заказ химчистки любой вида товара.
+
+block content
+    .section-page
+        h1.caption Карьера
+    .wrapper-content
+        // #WORKAREA#
+        .career__wrapper
+            .review__content
+                h2.top Элерон (Европейская химчистка Apetta)
+                img(src="img/content/career-page-1.png", alt="").main_img
+                p Компания "Европейская химчистка  Apetta" основана в 1997г.
+                p С 2002 года мы являемся якорным арендатором в гипермаркетах О'КЕЙ и продолжаем совместное  развитие как в Санкт-Петербурге, так и в регионах.
+                p С 2008 года мы развиваем направление по обслуживанию корпоративных клиентов: HORECA , медицина, предприятия производственного сектора и госучреждения.
+                .img_block
+                    img(src="img/content/career.png", alt="")
+                    img(src="img/content/career.png", alt="")
+                p Мы являемся якорным арендатором в гипермаркетах О'КЕЙ и продолжаем совместное  развитие как в Санкт-Петербурге, так и в регионах.
+                .corporate_life_block
+                    h2 Корпоративная жизнь компании
+                    p С 2008 года мы развиваем направление по обслуживанию корпоративных клиентов: HORECA , медицина, предприятия производственного сектора и госучреждения.
+                    .life_img_block
+                        img(src="img/content/career-small.png", alt="")
+                        img(src="img/content/career-small.png", alt="")
+                        img(src="img/content/career-small.png", alt="")
+                        img(src="img/content/career-small.png", alt="")
+                        img(src="img/content/career-small.png", alt="")
+                .geography_block
+                    h2 География присутствия
+                    h3 Apetta в г. Санкт-Петербурге- 27 адресов:
+                    ul
+                        li ГМ ОКЕЙ - 18 химчисток;
+                        li ГМ Карусель - 1 химчистка;
+                        li ТК Невский Центр - 1 химчистка;
+                        li в других ТРК - 7 химчисток.
+                    h3 Apetta в г. Москве и Моск. области:
+                    ul
+                        li г. Москва,Ленинский пр., 101;
+                        li г. Москва, Пятницкое ш., 39 ТЦ "Мандарин";
+                        li г. Москва, Путилковское ш., 71 км МКАД;
+                        li г. Москва, ул. Академика Королева, 13;
+                        li г. Химки, квартал Клязьма, Набережный проезд, 27;
+                        li г. Ногинск  ГМ О'КЕЙ.
+                    h3 Apetta в г. Ростове-на-Дону - 4 адреса:
+                    ul
+                        li в ГМ ОКЕЙ Б-р Комарова, 24а;
+                        li в ГМ ОКЕЙ, ул. Малиновского, 23д;
+                        li в ТРК Горизонт, ул. М. Нагибина, 32е;
+                        li в ТЦ МИР, пр. 40 лет Победы, 85;
+                        li ул. Красноармейская 133/117 Wolrd Class.
+                    p На данный момент "Европейская химчистка Apetta" является лидирующей компанией на рынке услуг химчистки и стирки Санкт-Петербурга (по данным Ассоциации Предприятий химической стирки и прачечных).
+                .vacancy_block
+                    h2.vacancy_caption Вакансии компании
+                    .vacancy-filter
+                        select.metro(name="metro")
+                            option(value="1") Гостинный двор
+                            option(value="2") Адмиралтейская
+                            option(value="3") Спортивная
+                            option(value="4") Улица Дыбенко
+                            option(value="5") Парнас
+                        .tab-viewer
+                            a.list(href="", data-tab="#list-block") Списком
+                            a.map.active(href="", data-tab="#maps-block") На карте
+                    .tab.maps-block#maps-block
+                        .lineform
+                            input(type="text", name="address", value="", placeholder="Введите свой адрес")
+                            a.btn(href="") Найти ближайшую химчистку
+                        .map#map1
+                    .tab.list-block#list-block
+                        // JSON FOR MAP GENERATE HERE
+                        .vacancy-item
+                            .vacancy-anons
+                                a.name(href="") Руководитель направления
+                                .price от 70 000 до 80 000 руб.
+                            .vacancy-detail
+                                .metro.orange Дыбенко
+                                .address Полюстровский просп., 84, литера А, ТРК Европолис. Лесная ст.м.
+                        .vacancy-item
+                            .vacancy-anons
+                                a.name(href="") Сотрудник отдела восстановления
+                                .price от 70 000 до 80 000 руб.
+                            .vacancy-detail
+                                .metro.blue Горьковская
+                                .address Полюстровский просп., 84, литера А, ТРК Европолис. Лесная ст.м.
+                        .vacancy-item
+                            .vacancy-anons
+                                a.name(href="") Приемщик химчистки
+                                .price от 70 000 до 80 000 руб.
+                            .vacancy-detail
+                                .metro.red Техноложка
+                                .address Полюстровский просп., 84, литера А, ТРК Европолис. Лесная ст.м.
+            .review__form
+                form
+                    div
+                        p Станьте одним из нас
+                        input(type='text', name='nick', placeholder='Ваше имя')
+                        input(type='text', name='phone', placeholder='Телефон')
+                        input(type='text', name='nick', placeholder='E-mail')
+                        textarea(name='review', placeholder='Комментарий')
+                        input(type='file', value="Прикрепить файл")
+                        button(type='submit') Отправить

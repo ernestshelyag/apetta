@@ -1,0 +1,39 @@
+div.news-list
+{
+	word-wrap: break-word;
+}
+div.news-list img.preview_picture
+{
+	float:left;
+	margin:0 4px 6px 0;
+}
+.news-date-time {
+	color:#486DAA;
+}
+
+form[name='SIMPLE_FORM_3'] input[type='submit']{
+	max-width: 126px;
+	font-size: 16px;
+	margin-top: 14px;
+	padding: 16px 24px;
+	color: #fff;
+	border: none;
+	background: #009ace;
+	-webkit-box-shadow: 0 2px 4px 0 #8a8d8f;
+	box-shadow: 0 2px 4px 0 #8a8d8f;
+}
+
+.questions-answers__form font.errortext{
+	display: inline-block;
+	margin-top: 15px;
+	font-weight: normal;
+	font-size:1.5rem;
+}
+
+.questions-answers__form font.notetext{
+	display: inline-block;
+	margin-top: 15px;
+	font-weight: normal;
+	font-size:1.5rem;
+	color: green;
+}

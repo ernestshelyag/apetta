@@ -1,0 +1,6 @@
+tmp
+node_modules
+.idea
+dist/*.html
+dist/img/favicon/
+src/scss/layouts/

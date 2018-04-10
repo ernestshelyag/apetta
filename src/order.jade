@@ -1,0 +1,182 @@
+extends template/template
+
+block title
+    title Apetta. Оформление заказа.
+
+block content
+    .section-page
+        h1 Оформление заказа
+    .wrapper-content
+        // #WORKAREA#
+
+        .wrapper100.background-grey
+            h2 Авторизуйтесь, если у вас есть аккаунт
+            .row
+                .item7
+                    .auth-block
+                        .social-network__wrap
+                            .title Войти через социальную сеть
+                            .links
+                                a(href="")
+                                    img(src="img/flat-icons-sn.png")
+                                    //TODO: IMG TO SVG!
+                        .email-password__wrap
+                            .title Войти по номеру телефона
+                            form(action="", method="post")
+                                input(type="text", name="email", placeholder="Телефон", value="")
+                                .submit-form__wrap
+                                    input.btn(type="submit", name="submit", value="Войти")
+                                    span или продолжите оформление заказа без входа на сайт
+        .order-form
+            | <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+            .row
+                .item7
+                    form(action="", method="")
+                        .order-form--block.contact-info
+                            h2.aleft 1. Введите Ваши данные
+                            .label-input-block.w100
+                                label(for="fname") Ваше имя
+                                input#fname(name="fname", type="text", value="")
+                            .label-input-block
+                                label(for="phone") Ваш телефон
+                                input#phone(name="phone", type="text", value="")
+                            .label-input-block
+                                label(for="order_email") Ваш e-mail
+                                input#order_email(name="order_email", type="text", value="")
+                        .order-form--block.delivery-fromme
+                            h2.aleft 2. Как вы хотите сдать товар?
+                            .tabs-radio
+                                .radio-item
+                                    input.css-checkbox(type="radio", name="radiog_lite", id="radio1")
+                                    label.css-label.radGroup1(for="radio1") Самостоятельно
+                                .radio-item
+                                    input.css-checkbox(type="radio", name="radiog_lite", id="radio2")
+                                    label.css-label.radGroup1(for="radio2") Отдать курьеру
+                            .tabs-content
+                                .radio1-tab
+                                    .maps-block
+                                        .lineform
+                                            input(type="text", name="address", value="", placeholder="Введите свой адрес")
+                                            a.btn(href="") Найти ближайшую химчистку
+                                        .map#map1
+                                .radio2-tab
+                                    .fields-block
+                                        .label-input-block
+                                            label(for="address_dostavki_from") Адрес доставки
+                                            input#address_dostavki_from(name="address_dostavki_from", type="text", value="")
+                                        .label-input-block.calendar
+                                            label(for="data_dostavki_from") Дата доставки
+                                            input#data_dostavki_from(name="data_dostavki_from", type="text", value="", placeholder="08.06.2017")
+                                        .label-input-block.calendar
+                                            label(for="vremya_dostavki_from") Время доставки
+                                            select#vremya_dostavki_from(name="vremya_dostavki_from")
+                                                option(value="") 12:00-18:00
+                                                option(value="") 12:00-18:00
+                                                option(value="") 12:00-18:00
+                        .order-form--block.delivery-tome
+                            h2.aleft 3. Как вы хотите забрать товар?
+                            .tabs-radio
+                                .radio-item
+                                    input.css-checkbox(type="radio", name="radiog_lite", id="radio3")
+                                    label.css-label.radGroup1(for="radio3") Самостоятельно
+                                .radio-item
+                                    input.css-checkbox(type="radio", name="radiog_lite", id="radio4")
+                                    label.css-label.radGroup1(for="radio4") Забрать курьером
+                            .tabs-content
+                                .radio3-tab
+                                    .maps-block
+                                        .lineform
+                                            input(type="text", name="address", value="", placeholder="Введите свой адрес")
+                                            a.btn(href="") Найти ближайшую химчистку
+                                        .map#map2
+                                .radio4-tab
+                                    .fields-block
+                                        .label-input-block
+                                            label(for="address_dostavki_to") Адрес доставки
+                                            input#address_dostavki_to(name="address_dostavki_to", type="text", value="")
+                                        .label-input-block.calendar
+                                            label(for="data_dostavki_to") Дата доставки
+                                            input#data_dostavki_to(name="data_dostavki_to", type="text",  value="", placeholder="08.06.2017")
+                                        .label-input-block.calendar
+                                            label(for="vremya_dostavki_to") Время доставки
+                                            select#vremya_dostavki_to(name="vremya_dostavki_to")
+                                                option(value="") 12:00-18:00
+                                                option(value="") 12:00-18:00
+                                                option(value="") 12:00-18:00
+                        .order-form--block.comments
+                            .label-input-block
+                                label(for="comment") Комментарий
+                                textarea#comment(placeholder="Любая дополнительная информация")
+                        .order-form--block.payment
+                            h2.aleft 4. Выберите способ оплаты
+                            .payments-method
+                                .radiobutton_image.radiobutton.radiobutton_image--top
+                                    input.css-checkbox(type="radio", name="radiog_lite", id="item1")
+                                    label.css-label.radGroup1(for="item1") Банковская карта
+                                    .image_block
+                                        img(src="img/money_cart.png" alt="")
+                                        //TODO: JS Click for active radio button
+                                .radiobutton_image.radiobutton.radiobutton_image--top
+                                    input.css-checkbox(type="radio", name="radiog_lite", id="item2")
+                                    label.css-label.radGroup1(for="item2") Яндекс-Деньги
+                                    .image_block
+                                        img(src="img/money_ya.png" alt="")
+                                        //TODO: JS Click for active radio button
+                                .radiobutton_image.radiobutton.radiobutton_image--top
+                                    input.css-checkbox(type="radio", name="radiog_lite", id="item3")
+                                    label.css-label.radGroup1(for="item3") Наличные
+                                    .image_block
+                                        img(src="img/money_nal.png" alt="")
+                                        //TODO: JS Click for active radio button
+
+                        .order-form--block.cart
+                            h2.aleft 5. Подтверждение заказа
+                            .cart-right-block.aleft
+                                .content
+                                    .products-block
+                                        .header
+                                            .item-name Наименование
+                                            .item-count Количество
+                                            .item-price Цена (Р)
+                                        .column
+                                            .product-item
+                                                .item-name
+                                                    .name Шуба
+                                                    .props
+                                                        span.product__props-name Длина:&nbsp;
+                                                        span.product__props-value до 90 см&nbsp;
+                                                        span.product__props-name Тип меха:&nbsp;
+                                                        span.product__props-value натуральный&nbsp;
+                                                        span.product__props-name Дорогостоящий:&nbsp;
+                                                        span.product__props-value да&nbsp;
+                                                .item-count.count_block
+                                                    p 1
+                                                .item-price
+                                                    span 2 000 Р
+                                            .product-item
+                                                .item-name
+                                                    .name Шуба
+                                                    .props
+                                                        span.product__props-name Длина:&nbsp;
+                                                        span.product__props-value до 90 см&nbsp;
+                                                        span.product__props-name Тип меха:&nbsp;
+                                                        span.product__props-value натуральный&nbsp;
+                                                        span.product__props-name Дорогостоящий:&nbsp;
+                                                        span.product__props-value да&nbsp;
+                                                .item-count.count_block
+                                                    p 1
+                                                .item-price
+                                                    span 2 000 Р
+                        .order-summary
+                            .sum-item
+                                .sum-item__name Доставка
+                                .sum-item__value 0 Р
+                            .sum-item
+                                .sum-item__name Итоговая стоимость
+                                .sum-item__value 18 000 Р
+                        .submit-form
+                            input.btn(type="submit", value="Оформить заказ")
+
+                        .order-information__text
+                            p Доставка бесплатна в городе при заказе от 3 000 рублей.
+                            p Доставка в пригород Санкт-Петербурга доступна только в случае если сумма заказа превышает 5 000 р. и тоже является фиксированной для каждого пригорода.

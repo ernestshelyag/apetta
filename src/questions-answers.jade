@@ -1,0 +1,78 @@
+extends template/template
+
+block title
+    title Apetta. Сеть федеральных химчисток. Интернет-заказ химчистки любой вида товара.
+
+block content
+    .section-page
+        h1.caption Вопросы-ответы
+    .wrapper-content
+        // #WORKAREA#
+        .questions-answers__wrapper
+            .questions-answers__list
+                span Темы
+                ul
+                    li(data-href="#questions-answers__content_block-all") Все темы
+                    li(data-href="#questions-answers__content_block-buy") Покупка
+                    li(data-href="#questions-answers__content_block-order") Заказы
+                    li(data-href="#questions-answers__content_block-client") Клиенты
+            .questions-answers__content
+                #questions-answers__content_block-all.content_block
+                    h2 Популярные вопросы и ответы на них
+                    ul.accordion
+                        li
+                            a(href='')
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui veniam similique laboriosam ab deleniti molestiae vel ipsa officiis placeat eos.
+                            p
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id sit ea aperiam. Hic ipsum illo numquam, itaque excepturi et quaerat sequi expedita, repudiandae architecto laudantium tenetur vel esse suscipit, in, quidem. Maiores facilis distinctio, quae similique alias incidunt delectus quo ut assumenda, itaque dolorum quis, laborum deleniti ab laudantium! Reprehenderit.
+                        hr
+                        li
+                            a(href='')
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus nisi at in, cum quos expedita totam. Beatae non aliquam magnam!
+                            p
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut vero error quaerat, nostrum voluptates, accusamus dolor odit ratione sed debitis iure sit modi rem mollitia eum inventore, ipsa quis. Voluptatem dignissimos, alias assumenda totam perferendis animi sunt laborum, quibusdam, inventore laudantium ducimus sed eum voluptate magnam? Dicta voluptatem ad voluptas.
+                        hr
+                        li
+                            a(href='')
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis cum tenetur rem alias explicabo placeat incidunt et nostrum, laboriosam ex.
+                            p
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae ipsa cum perferendis qui, itaque unde, quos, distinctio animi dignissimos laborum, quisquam autem molestiae iure eos sed officia aperiam. Consequuntur sint error molestias ipsum voluptatem dolorum totam vitae amet, vel libero quam atque. Qui, blanditiis nesciunt praesentium cumque, aspernatur alias dolorum.
+                        hr
+                        li
+                            a(href='')
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus asperiores ut sed autem soluta quisquam ipsum incidunt repellendus a rem!
+                            p
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eaque consectetur natus cumque. Doloremque optio at inventore illum nobis voluptas error, asperiores quos nisi aut accusamus repellat molestiae, temporibus esse. Corrupti dignissimos, doloribus hic error culpa voluptatum voluptate architecto odio commodi at alias quidem eaque, facilis voluptates. Nostrum, cupiditate quas!
+                        hr
+                        li
+                            a(href='')
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur sed illo quae cupiditate iure autem molestiae ea rem, iste officia!
+                            p
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et delectus expedita vero, blanditiis eius. Vitae incidunt ducimus, commodi dolorem accusamus beatae consectetur adipisci. Hic excepturi, nam! Quia quibusdam dicta incidunt quos nihil, voluptates, deleniti suscipit ad accusamus placeat provident, neque sit excepturi hic iste cum dolorem illo nesciunt maiores sapiente.
+                        hr
+                        li
+                            a(href='')
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis quo, quasi ullam impedit laborum praesentium esse suscipit magnam dignissimos magni.
+                            p
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga error, iure illo assumenda non ipsa maiores ratione atque reiciendis magni repudiandae repellat iste illum ipsum pariatur ea rerum explicabo, inventore mollitia expedita. Nam iste, nihil atque voluptatum, asperiores recusandae, fugit aliquid officiis dolore corrupti incidunt, enim quaerat sint sit at.
+                        hr
+                        li
+                            a(href='')
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde numquam aliquid sapiente voluptate enim saepe natus. Fugiat ea, nobis sunt.
+                            p
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aperiam, architecto quod pariatur accusamus minima debitis porro blanditiis voluptate consectetur quasi saepe earum quis esse a, officiis praesentium quos laboriosam officia quo fugit voluptatum facilis rem numquam. Quod quasi corporis consequuntur voluptatibus inventore molestiae neque aperiam, dolorum amet nisi, natus?
+
+                #questions-answers__content_block-buy.content_block
+                    h2 покупка
+                #questions-answers__content_block-order.content_block
+                    h2 Заказы
+                #questions-answers__content_block-client.content_block
+                    h2 Клиенты
+
+            .questions-answers__form
+                form#form(onsubmit='validate(this); return false;', novalidate='')
+                    div
+                        p Задайте нам вопрос
+                        input(type='email', name='email', placeholder='E-mail')
+                        textarea(name='question', placeholder='Вопрос')
+                        button(type='submit') Отправить

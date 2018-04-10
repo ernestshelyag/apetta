@@ -1,0 +1,231 @@
+@import '../config';
+.popup_item {
+  input {
+    min-width: 300px;
+  }
+  .title {
+    font-weight: 600;
+    text-align: center;
+    color: #383838;
+    &.aleft {
+      text-align: left;
+    }
+  }
+  .subtitle {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: left;
+    color: #2f3031;
+  }
+  .subtitle_h2 {
+    font-size: 2.2rem;
+    line-height: 1.5;
+    text-align: left;
+    color: #2f3031;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  ul li {
+    font-size: 1.6rem;
+    line-height: 1.29;
+    margin-bottom: 5px!important;
+  }
+  .text {
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: center;
+    color: #8a8d8f;
+    width: 75%;
+    margin: 0 auto;
+  }
+  .column-form {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    input[type="text"] {
+      margin-bottom: 18px;
+    }
+  }
+  .content-block {
+    display: flex;
+    justify-content: center;
+    .content-block__html {
+      max-width: 600px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .content-block__price {
+      font-size: 1.4rem;
+      line-height: 1.5;
+      text-align: left;
+      color: #2f3031;
+      margin-left: 30px;
+      .old-price {
+        text-decoration: line-through;
+      }
+      .price {
+        font-size: 2rem;
+      }
+      .btn {
+        display: block;
+      }
+    }
+  }
+  .wrapper_600 {
+    margin: 0 auto;
+    .list-block {
+      .vacancy-item {
+        .title {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .review__wrapper {
+    display: flex;
+    .review__form {
+      width: 374px;
+      position: relative;
+    }
+  }
+  .vacancy-detail-wrapper {
+    .title {
+      text-align: left;
+    }
+    .review__content {
+
+    }
+    .review__form {
+      margin-left: 30px;
+    }
+  }
+}
+
+/*-----responcive-----*/
+
+@media screen and (min-width: 1281px) {
+   body .fancybox-slide > * {
+     padding: 66px 128px 66px 113px;
+   }
+  .fancybox-close-small {
+    top: 72px;
+    right: 129px;
+  }
+  .popup_item {
+    .title {
+      font-size: 4rem;
+      margin-bottom: 45px;
+    }
+    .wrapper_600 {
+      width: 604px;
+    }
+    .fast-order-wrapper {
+      width: 604px;
+    }
+    .vacancy-detail-wrapper {
+      width: 830px;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  body .fancybox-slide > * {
+    padding: 35px 40px;
+  }
+  .fancybox-close-small {
+    top: 38px;
+    right: 43px;
+  }
+  .popup_item {
+    .title {
+      font-size: 3.2rem;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 960px) {
+  .fast-product-wrapper {
+    max-width: 500px;
+  }
+  .vacancy-detail-wrapper {
+    .review__wrapper {
+      margin: 0;
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .fast-order-wrapper {
+    width: 504px;
+  }
+  .content-block__price .btn {
+    margin-top: 21px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body .fancybox-slide > * {
+    padding: 50px 10px 10px 10px;
+  }
+  .fancybox-close-small {
+    top: 18px;
+    right: 42%;
+  }
+  .popup_item {
+    margin: 20px 15px!important;
+    .title {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .wrapper_600 {
+    }
+    .fast-order-wrapper {
+      .column-form {
+        width: 230px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        input {
+          min-width: 230px;
+        }
+      }
+    }
+    .fast-product-wrapper {
+      .content-block {
+        flex-direction: column;
+        .content-block__price {
+          width: 170px;
+          margin: 0 auto;
+          text-align: center;
+        }
+      }
+    }
+    .vacancy-detail-wrapper {
+      .title {
+        margin: 0 -10px 10px 0;
+      }
+      .subtitle_h2 {
+        font-size: 1.6rem;
+      }
+      .review__wrapper {
+        flex-direction: column;
+        min-width: 200px;
+        .review__form {
+          text-align: center;
+          width: 245px;
+          margin: 0 auto;
+          text-align: center;
+          input {
+            min-width: 230px;
+          }
+        }
+      }
+    }
+  }
+}

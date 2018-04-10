@@ -1,0 +1,14 @@
+input[type="submit"]{
+    font-size: 1.6rem;
+    line-height: 52px;
+    max-width: 150px;
+    padding: 0 24px;
+    color: #fff;
+    border: none;
+    background: #009ace;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(138, 141, 143, .31);
+    box-shadow: 0 2px 4px 0 rgba(138, 141, 143, .31);
+    position: absolute;
+    top: 0;
+    right: 0;
+}

@@ -1,0 +1,32 @@
+#hidden_map_controls{
+	display: none;
+}
+
+.corp_img img{
+	height: 183px;
+}
+form[name='SIMPLE_FORM_5'] input[type='submit']{
+	max-width: 150px;
+	font-size: 16px;
+	margin-top: 14px;
+	padding: 16px 24px;
+	color: #fff;
+	border: none;
+	background: #009ace;
+	-webkit-box-shadow: 0 2px 4px 0 rgba(138, 141, 143, .23);
+	box-shadow: 0 2px 4px 0 rgba(138, 141, 143, .23);
+}
+form[name='SIMPLE_FORM_5'] p{
+	font-size: 1.5em;
+}
+
+form[name='SIMPLE_FORM_5'] .notetext{
+	margin-top: 10px;
+	display: block;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+	color: green;
+}
+form[name='SIMPLE_FORM_5'] errortext{
+	color: red;
+}

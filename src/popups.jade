@@ -1,0 +1,147 @@
+extends template/template
+
+block title
+    title Apetta. Сеть федеральных химчисток. Интернет-заказ химчистки любой вида товара.
+
+block content
+    .section-page
+        .breadcrumbs-block
+            ul.breadcrumbs
+                li.breadcrumbs-element
+                    a(href="") Главная
+                    span &nbsp;/&nbsp;
+                li.breadcrumbs-element
+                    span Каталог
+
+        h1 Каталог всплывающих окон
+    .wrapper-content
+        ul.index-page
+            li
+                a(href="#fastorder").fancybox Быстрый заказ
+            li
+                a(href="#fastproduct").fancybox Быстрый просмотр товара
+            li
+                a(href="#vacancylist").fancybox Просмотр списка вакансий по адресу
+            li
+                a(href="#vacancydetail").fancybox Просмотр детальной вакансии
+            li
+                a(href="#mainaddress").fancybox Адрес головного офиса
+        .popup_block.hide
+            #fastorder.popup_item
+                .fast-order-wrapper
+                    .title Быстрый заказ
+                    .column-form
+                        input(type="text", name="name", placeholder="Имя", value="")
+                        input(type="text", name="phone", placeholder="Телефон", value="")
+                        input.btn(type="submit", name="submit", value="Заказать")
+                    .text Нажав на кнопку “заказать” информация о заказе будет передана нашему менеджеру и он свяжется с вами в ближайшее время для оформления заказа
+            #fastproduct.popup_item
+                .fast-product-wrapper
+                    .title.aleft Накидка для шубы
+                    .content-block
+                        .content-block__html
+                            img(src="img/content/shuba.png")
+                            p Ежегодно  доверяют свои вещи 1 500 000 Клиентов, которые остаются довольны качеством выполненных услуг. В нашей компании работают высококвалифицированные специалисты, которые проходят
+                            .subtitle_h2 Характеристики
+                            ul
+                                li • 	Ежегодно  доверяют свои вещи 1 500 000 Клиентов остаются довольны качеством выполненных услуг.
+                                li • 	Ежегодно  доверяют свои вещи 1 500 000 Клиентов остаются довольны качеством выполненных услуг.
+                                li • 	Доверяют свои вещи 1 500 000
+                        .content-block__price
+                            .name Цена
+                            .prices
+                                .old-price 2 750 Р.
+                                .price 2 000 Р.
+                            a.btn(href="") В корзину
+            #vacancylist.popup_item
+                .wrapper_600
+                    .title.aleft Вакансии по адресу
+                    .subtitle Индустриальный, 25, гипермаркет О'кей
+                    .list-block
+                        .vacancy-item
+                            .vacancy-anons
+                                a.name.fancybox(href="#vacancydetail") Руководитель направления
+                                .price от 70 000 до 80 000 руб.
+                            .vacancy-detail
+                                .metro.orange Дыбенко
+                                .address Полюстровский просп., 84, литера А, ТРК Европолис. Лесная ст.м.
+                        .vacancy-item
+                            .vacancy-anons
+                                a.name(href="") Руководитель направления
+                                .price от 70 000 до 80 000 руб.
+                            .vacancy-detail
+                                .metro.blue Дыбенко
+                                .address Полюстровский просп., 84, литера А, ТРК Европолис. Лесная ст.м.
+                        .vacancy-item
+                            .vacancy-anons
+                                a.name(href="") Руководитель направления
+                                .price от 70 000 до 80 000 руб.
+                            .vacancy-detail
+                                .metro.red Дыбенко
+                                .address Полюстровский просп., 84, литера А, ТРК Европолис. Лесная ст.м.
+                        .vacancy-item
+                            .vacancy-anons
+                                a.name(href="") Руководитель направления
+                                .price от 70 000 до 80 000 руб.
+                            .vacancy-detail
+                                .metro.orange Дыбенко
+                                .address Полюстровский просп., 84, литера А, ТРК Европолис. Лесная ст.м.
+                        .vacancy-item
+                            .vacancy-anons
+                                a.name(href="") Руководитель направления
+                                .price от 70 000 до 80 000 руб.
+                            .vacancy-detail
+                                .metro.orange Дыбенко
+                                .address Полюстровский просп., 84, литера А, ТРК Европолис. Лесная ст.м.
+                        .vacancy-item
+                            .vacancy-anons
+                                a.name(href="") Руководитель направления
+                                .price от 70 000 до 80 000 руб.
+                            .vacancy-detail
+                                .metro.orange Дыбенко
+                                .address Полюстровский просп., 84, литера А, ТРК Европолис. Лесная ст.м.
+                        .vacancy-item
+                            .vacancy-anons
+                                a.name(href="") Руководитель направления
+                                .price от 70 000 до 80 000 руб.
+                            .vacancy-detail
+                                .metro.orange Дыбенко
+                                .address Полюстровский просп., 84, литера А, ТРК Европолис. Лесная ст.м.
+                        .vacancy-item
+                            .vacancy-anons
+                                a.name(href="") Руководитель направления
+                                .price от 70 000 до 80 000 руб.
+                            .vacancy-detail
+                                .metro.orange Дыбенко
+                                .address Полюстровский просп., 84, литера А, ТРК Европолис. Лесная ст.м.
+
+            #vacancydetail.popup_item
+                .vacancy-detail-wrapper
+                    .title Руководитель направления
+                    .review__wrapper
+                        .review__content
+                            p Компания "Европейская химчистка  Apetta" основана в 1997г.
+                            p С 2002 года мы являемся якорным арендатором в гипермаркетах О'КЕЙ и продолжаем совместное  развитие как в Санкт-Петербурге, так и в регионах.
+                            .subtitle_h2 Требования
+                            p Компания "Европейская химчистка  Apetta" основана в 1997г.
+                            p С 2002 года мы являемся якорным арендатором в гипермаркетах О'КЕЙ и продолжаем совместное  развитие как в Санкт-Петербурге, так и в регионах.
+                            p С 2008 года мы развиваем направление по обслуживанию корпоративных клиентов: HORECA , медицина, предприятия производственного сектора и госучреждения.
+                            .subtitle_h2 Условия
+                            ul
+                                li • 	Ежегодно  доверяют свои вещи 1 500 000 Клиентов остаются довольны качеством выполненных услуг.
+                                li • 	Ежегодно  доверяют свои вещи 1 500 000 Клиентов остаются довольны качеством выполненных услуг.
+                                li • 	Доверяют свои вещи 1 500 000
+
+                        .review__form
+                            form(action="", method="post")
+                                div
+                                    p Станьте одним из нас
+                                    input(type='text', name='nick', placeholder='Ваше имя')
+                                    input(type='text', name='phone', placeholder='Телефон')
+                                    input(type='text', name='nick', placeholder='E-mail')
+                                    textarea(name='review', placeholder='Комментарий')
+                                    input(type='file', value="Прикрепить файл")
+                                    button(type='submit') Отправить
+            #mainaddress.popup_item
+                .vacancy-detail-wrapper
+                    .title Адрес головного офиса

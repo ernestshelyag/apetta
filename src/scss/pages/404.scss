@@ -1,0 +1,21 @@
+@import '../config';
+.error-page__wrapper {
+  text-align: center;
+  max-width: 817px;
+  min-width: 290px;
+  margin: 0 auto;
+  .top-text {
+    margin-top: 20%;
+    font-size: 1.6rem;
+    display: block;
+  }
+  .main-text {
+    font-size: 7.2rem;
+    line-height: 87px;
+    font-weight: 600;
+  }
+  a.btn {
+    padding: 16px 24px;
+    margin: 30px auto;
+  }
+}

@@ -1,0 +1,12 @@
+.coupon_success{
+	position: relative;
+	border: 1px solid #59a62a !important;
+	background: rgba(89,166,42,.16)!important;
+	box-shadow: 0 0 2px 0 rgba(89,166,42,.8)!important;
+}
+body .cart-right-block{
+	position: relative !important;
+}
+.cart-right-block{
+	margin: 0 auto;
+}

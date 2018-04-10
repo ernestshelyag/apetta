@@ -1,0 +1,13 @@
+@media screen and (max-width: 950px) {
+	.wrapper-content .wrapper__address{
+		display: block;
+	}
+	.wrapper__address .address__list{
+		margin-top: 15px;
+		max-width: 100% !important;
+	}
+	body .btn, body a.btn{
+		font-size:1.4rem !important;
+		max-height: 52px;
+	}
+}

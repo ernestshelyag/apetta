@@ -1,0 +1,12 @@
+.item10.parhnres{
+    margin-bottom: 60px;
+}
+.main-content_block.item10.parhnres .bx-wrapper{
+    padding: 0 50px!important;
+}
+.bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus{
+    background-position: -43px -32px !important;
+}
+.bx-wrapper .bx-prev:hover, .bx-wrapper .bx-prev:focus {
+    background-position: 0 -32px !important;
+}

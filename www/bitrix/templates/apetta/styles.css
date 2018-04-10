@@ -1,0 +1,23 @@
+.vacancy-item .vacancy-detail .metro{
+    font-weight: 400;
+    margin: 7px 0;
+}
+
+.vacancy-detail{
+    display: flex;
+    flex-direction: column;
+}
+
+.vacancy-item .address{
+    order: 3;
+}
+.vacancy-item .metro{
+    order: 2;
+}
+.vacancy-item .address:last-child{
+    order: 4;
+}
+.vacancy-item .address:nth-child(3){
+    font-weight: 600;
+    order: 1;
+}

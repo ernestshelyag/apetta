@@ -1,0 +1,53 @@
+.bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus{
+    background-position: -43px -32px !important;
+}
+.bx-wrapper .bx-prev:hover, .bx-wrapper .bx-prev:focus {
+    background-position: 0 -32px !important;
+}
+.bx-wrapper .bx-prev{
+    left: -35px !important;
+}
+.bx-wrapper .bx-next{
+    right:-35px !important;
+}
+.bx-wrapper{
+    margin:0 40px!important;
+}
+.corp_img p{
+    text-align: center;
+    line-height: 1.5rem;
+    font-size:1.5rem;
+}
+.corp_img div{
+    width: 230px;
+    margin: 10px;
+}
+.corp_img img{
+    width: auto;
+    margin: 0;
+}
+.cart-right-block .header .item-price span{
+    color: red;
+    padding-left: 0;
+}
+.cart-right-block .content .descr{
+    color: red;
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+form[name='SIMPLE_FORM_4'] p{
+    margin-top: 5px;
+    text-align: center;
+    /*margin-bottom: 15px;*/
+}
+form[name='SIMPLE_FORM_4'] .auth-block{
+    padding-bottom: 10px;
+}
+form[name='SIMPLE_FORM_4'] .row{
+    padding-bottom: 40px;
+}
+form[name='SIMPLE_FORM_4']  .notetext{
+    line-height: 0.9rem;
+    color: green;
+}

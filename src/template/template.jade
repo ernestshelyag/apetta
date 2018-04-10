@@ -1,0 +1,16 @@
+block config
+    include ./include/config.jade
+
+include ./mixins/mixins.jade
+doctype
+html(lang="en")
+    head
+        include ./include/header.jade
+        block title
+
+    body
+        include ./include/body-header.jade
+        main
+            block content
+        include ./include/body-footer.jade
+    include ./include/footer.jade

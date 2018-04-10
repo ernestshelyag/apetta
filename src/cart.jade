@@ -1,0 +1,97 @@
+extends template/template
+
+block title
+    title Apetta. Корзина.
+
+block content
+    .section-page
+        //h1 Корзина
+    .wrapper-content
+        // #WORKAREA#
+        .cart-right-block
+            a(href="#").btn-close-hidden &#10006 Закрыть
+            .header
+                h2 Корзина
+            .content
+                .products-block
+                    .header
+                        .item-name Наименование
+                        .item-count
+                            span Количество
+                        .item-price Цена (Р)
+                        .item-price.item-price__all Стоимость (Р)
+                        .item-actions
+                    .column
+                        .product-item
+                            .item-name
+                                .name Шуба
+                                .props
+                                    span.product__props-name Длина:&nbsp;
+                                    span.product__props-value до 90 см&nbsp;
+                                    span.product__props-name Тип меха:&nbsp;
+                                    span.product__props-value натуральный&nbsp;
+                                    span.product__props-name Дорогостоящий:&nbsp;
+                                    span.product__props-value да&nbsp;
+                            .item-count.count_block
+                                .minus
+                                    | <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 2"><path fill="#009ACE" fill-rule="evenodd" d="M0 0h10v2H0z"/></svg>
+                                input(type="text", min="1", value="1", required, name="qty")
+                                .plus
+                                    | <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path fill="#009ACE" fill-rule="evenodd" d="M4 4H0v2h4v4h2V6h4V4H6V0H4v4z"/></svg>
+
+                            .item-price
+                                span 2000р
+                            .item-price.item-price__all
+                                span 2000р
+                            .item-delete
+                                a(href="", data-action="AJAX THIS DELETE")
+                                    img(src="img/delete.png")
+                                    | Удалить
+                            .item-restore.hide
+                                .wrapper
+                                    | <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path fill="#009ACE" fill-rule="evenodd" d="M7 7H0v4h7v7h4v-7h7V7h-7V0H7v7z"/></svg>
+                                    p Восстановить
+                        .product-item
+                            .item-name
+                                .name Шуба
+                                .props
+                                    span.product__props-name Длина:&nbsp;
+                                    span.product__props-value до 90 см&nbsp;
+                                    span.product__props-name Тип меха:&nbsp;
+                                    span.product__props-value натуральный&nbsp;
+                                    span.product__props-name Дорогостоящий:&nbsp;
+                                    span.product__props-value да&nbsp;
+                            .item-count.count_block
+                                .minus
+                                    | <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 2"><path fill="#009ACE" fill-rule="evenodd" d="M0 0h10v2H0z"/></svg>
+                                input(type="text", min="1", value="1", required, name="qty")
+                                .plus
+                                    | <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path fill="#009ACE" fill-rule="evenodd" d="M4 4H0v2h4v4h2V6h4V4H6V0H4v4z"/></svg>
+
+                            .item-price
+                                span 2000Р
+                            .item-price.item-price__all
+                                span 2000Р
+                            .item-delete
+                                a(href="", data-action="AJAX THIS DELETE")
+                                    img(src="img/delete.png")
+                                    | Удалить
+                            .item-restore.hide
+                                .wrapper
+                                    | <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path fill="#009ACE" fill-rule="evenodd" d="M7 7H0v4h7v7h4v-7h7V7h-7V0H7v7z"/></svg>
+                                    p Восстановить
+                .cart-summary
+                    .order
+                        a.btn(href="") Оформить заказ
+                    .prices
+                        span.title Итоговая цена
+                        span.price 2000р
+                .sale-offer До бесплатной доставки осталось 300р
+
+                .promo-code
+                    // ajax https://dev.1c-bitrix.ru/api_help/catalog/classes/ccatalogdiscount/ccatalogdiscount.setcoupon.php
+                    a.link(href="", data-open="#promoform") У меня есть промо-код
+                    #promoform.invisibles
+                        form.promo.lineform(action="", method="post", data-submit="AJAX_CHECK_COUPON")
+                            input(type="text", name="coupon", value="", placeholder="Введите промо-код")
+                            input.btn.red(type="submit", name="submit", value="Применить")

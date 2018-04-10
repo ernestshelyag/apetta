@@ -1,0 +1,228 @@
+@import '../config';
+.questions-answers__wrapper {
+  margin: 0 auto;
+  position: relative;
+  .questions-answers__list {
+    font-size: 2rem;
+    line-height: 20px;
+    span {
+      text-align: left;
+      font-weight: 600;
+    }
+    ul {
+      line-height: 2.5;
+      font-size: 1.6rem;
+      color: #009ace;
+      li {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .questions-answers__content {
+    .questions-answers__content_block-buy, .questions-answers__content_block-order, .questions-answers__content_block-client {
+      display: none;
+      background: palevioletred;
+      height: 500px;
+    }
+    .content_block {
+      text-align: left;
+      h2 {
+        text-align: left;
+      }
+      ul {
+        hr {
+          border: none;
+          color: #d8d8d8;
+          background-color: #d8d8d8;
+          height: 1px;
+        }
+        li {
+          margin: 25px 0;
+          a {
+            font-size: 1.6rem;
+            margin: 10px 0;
+          }
+          p {
+            display: none;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .questions-answers__form {
+    width: 284px;
+    p {
+      font-weight: 600;
+    }
+    input {
+      width: 100%;
+      padding: 18px 24px;
+      outline: none;
+      border: solid 1px #d8d8d8;
+      margin-top: 24px;
+      font-size: 1.6rem;
+    }
+    textarea {
+      width: 100%;
+      height: 150px;
+      padding: 18px 24px;
+      margin-top: 12px;
+      border: solid 1px #d8d8d8;
+      font-size: 1.6rem;
+      line-height: 20px;
+    }
+    button {
+      padding: 16px 24px;
+      background: #009ace;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      margin-top: 14px;
+      box-shadow: 0 2px 4px 0 rgba(138, 141, 143, 1);
+    }
+    .error-message {
+      display: block;
+      color: #da291c;
+      margin-top: 14px;
+      font-size: 1.6rem;
+      line-height: 20px;
+    }
+  }
+}
+
+/*-----responsive-----*/
+
+@media screen and (max-width: 768px) {
+  .questions-answers__wrapper {
+    //margin: 0 15px;
+    text-align: center;
+    min-width: 290px;
+    max-width: 518px;
+    h2 {
+      font-size: 1.6rem;
+    }
+  }
+  .questions-answers__content {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .questions-answers__form {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    p {
+      font-size: 1.6rem;
+    }
+  }
+  .questions-answers__list {
+    margin-bottom: 25px;
+    ul {
+      li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 960px) {
+  .questions-answers__wrapper {
+    margin: 0 125px;
+    text-align: center;
+    min-width: 518px;
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
+
+  .questions-answers__content {
+    margin-bottom: 40px;
+  }
+  .questions-answers__form {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    p {
+      font-size: 1.8rem;
+    }
+  }
+  .questions-answers__list {
+    margin-bottom: 25px;
+    ul {
+      padding-top: 0;
+      display: inline-block;
+      li {
+        display: inline-block;
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1280px) {
+  .questions-answers__wrapper {
+    max-width: 852px;
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
+  .questions-answers__content {
+    width: 518px;
+    margin-bottom: 80px;
+  }
+  .questions-answers__form {
+    position: absolute;
+    top: 230px;
+    right: 0;
+    p {
+      font-size: 1.8rem;
+    }
+  }
+  .questions-answers__list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 284px;
+    height: 200px;
+    span {
+      padding: 7px 0;
+      display: block;
+    }
+    ul {
+      padding-top: 12px;
+    }
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .questions-answers__wrapper {
+    max-width: 1030px;
+  }
+  .questions-answers__content {
+    width: 700px;
+    margin-bottom: 99px;
+  }
+  .questions-answers__form {
+    position: absolute;
+    top: 246px;
+    right: 0;
+    p {
+      font-size: 2.2rem;
+    }
+  }
+  .questions-answers__list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 284px;
+    height: 200px;
+    span {
+      padding: 7px 0;
+      display: block;
+    }
+    ul {
+      padding-top: 12px;
+    }
+  }
+}

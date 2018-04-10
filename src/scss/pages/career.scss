@@ -1,0 +1,342 @@
+@import '../config';
+.career__wrapper {
+  margin: 0 auto;
+  position: relative;
+  max-width: 910px;
+  .review__content {
+    h2 {
+      text-align: left;
+    }
+    max-width: 603px;
+    .main_img {
+      margin-bottom: 15px;
+      width: 100%;
+      height: auto;
+    }
+    .img_block {
+      margin: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      img {
+        width: 49%;
+        height: 50%;
+      }
+    }
+    .corporate_life_block {
+      h2 {
+        margin-top: 20px;
+      }
+      .life_img_block {
+        display: flex;
+        margin: 15px 0 25px 0;
+        flex-wrap: wrap;
+      }
+    }
+    .geography_block {
+      h3 {
+        font-size: 1.6rem;
+        text-align: left;
+      }
+      ul {
+        list-style: disc;
+        margin-bottom: 20px;
+        li {
+          font-size: 1.6rem;
+          margin-bottom: 0;
+          line-height: 1.5;
+          margin-left: 17px;
+        }
+      }
+    }
+    .vacancy_block {
+      margin-top: 20px;
+      .vacancy_caption {
+        margin-bottom: 10px;
+      }
+      .vacancy-filter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        select {
+          border: solid 1px #8a8d8f;
+          font-size: 1.6rem;
+          min-width: 250px;
+        }
+        .tab-viewer {
+          display: flex;
+          a {
+            font-size: 1.6rem;
+            padding: 16px 16px 16px 42px;
+            box-sizing: border-box;
+            display: block;
+            background-color: $white;
+            border: 2px solid $light-grey;
+            &:first-child {
+              margin-right: 10px;
+            }
+          }
+          a.active {
+            background-color: $blue;
+            border: 2px solid $blue;
+            color: $white;
+            &:hover {
+              background-color: $blue-hover;
+              color: $white;
+            }
+            &:active {
+              background-color: $blue-active;
+              color: $white;
+            }
+          }
+          a.list {
+            &:before {
+              content: "";
+              background: url("");
+            }
+          }
+          a.map {
+            &:before {
+              content: "";
+              background: url("");
+            }
+          }
+        }
+      }
+      .maps-block {
+        .lineform {
+          margin: 25px auto 8px;
+          a.btn {
+            &:hover, &:active {
+              color: white;
+            }
+          }
+        }
+        .map {
+          height: 300px;
+        }
+      }
+      .list-block {
+        margin-top: 30px;
+      }
+    }
+  }
+  .review__form {
+    width: 284px;
+    p {
+      font-weight: 600;
+    }
+    input {
+      width: 100%;
+      padding: 18px 24px;
+      outline: none;
+      border: solid 1px #d8d8d8;
+      margin-top: 24px;
+      font-size: 1.6rem;
+    }
+    textarea {
+      width: 100%;
+      height: 150px;
+      padding: 18px 24px;
+      margin-top: 12px;
+      border: solid 1px #d8d8d8;
+      font-size: 1.6rem;
+      line-height: 20px;
+    }
+    button {
+      padding: 16px 24px;
+      background: #009ace;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      margin-top: 14px;
+      box-shadow: 0 2px 4px 0 rgba(138, 141, 143, .23);
+    }
+    .rating {
+      width: 110px;
+      height: 14px;
+      margin-top: 12px;
+      label {
+        float: right;
+        width: 14px;
+        height: 14px;
+        cursor: pointer;
+        background: url(../img/rating-star-nofill.svg) no-repeat;
+        padding-left: 8px;
+      }
+      input {
+        display: none;
+      }
+      input:checked ~ label, &:not(:checked) > label:hover, &:not(:checked) > label:hover ~ label {
+        background: url(../img/rating-star-fill.svg) no-repeat;
+      }
+    }
+    .error-message {
+      display: block;
+      color: #da291c;
+      margin-top: 14px;
+      font-size: 1.6rem;
+      line-height: 20px;
+    }
+  }
+}
+.vacancy-item {
+  border-bottom: solid 1px $light-grey;
+  padding: 12px 0;
+  width: 100%;
+  .vacancy-anons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    position: relative;
+    .name {
+      font-weight: 600;
+      color: $general-black;
+    }
+    .price {
+      color: $steel-grey;
+    }
+  }
+  .vacancy-detail {
+    .metro {
+      font-size: 1.6rem;
+      font-weight: 600;
+      position: relative;
+      padding-left: 16px;
+      margin-bottom: 7px;
+      position: relative;
+      &:after {
+        content: "";
+        border-radius: 50%;
+        height: 10px;
+        width: 10px;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      &:before {
+        content: "M";
+        color: $white;
+        font-size: .8rem;
+        font-weight: bold;
+        position: absolute;
+        left: 2px;
+        top: 1px;
+        z-index: 5;
+      }
+      &.orange { &:after { background: orange } }
+      &.blue { &:after { background: $blue } }
+      &.red { &:after { background: red } }
+      &.violet { &:after { background: blueviolet } }
+    }
+  }
+}
+
+//-----адаптив-----
+
+@media screen and (max-width: 960px) {
+  .career__wrapper {
+    .review__content {
+      margin: 0 auto;
+    }
+    .review__form {
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .career__wrapper {
+    .life_img_block {
+      justify-content: space-between;
+    }
+  }
+  .vacancy_block {
+    .lineform {
+      a {
+        width: 75%;
+      }
+    }
+  }
+  .vacancy-item {
+    .name {
+      font-size: 1.6rem;
+    }
+    .price {
+      font-size: 1.6rem;
+    }
+    .address {
+      font-size: 1.6rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .career__wrapper {
+    .top {
+      font-size: 1.4rem!important;
+      text-align: center!important;
+    }
+    .life_img_block {
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      img {
+        margin: 0 15px 15px 0;
+        height: 86px;
+        width: 86px;
+      }
+    }
+    .vacancy_caption {
+      text-align: center!important;
+    }
+  }
+  .vacancy_block {
+    .vacancy-filter {
+      padding-bottom: 86px;
+      select {
+        width: 284px;
+        margin: 0 auto;
+      }
+      .tab-viewer {
+        position: absolute;
+        top: 86px;
+        right: 0;
+        left: 0;
+        justify-content: center;
+      }
+    }
+    .lineform {
+      position: relative;
+      padding-bottom: 69px;
+      max-width: 284px;
+      input {
+
+      }
+      a {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+  .vacancy-item {
+    .name {
+      font-size: 1.4rem;
+    }
+    .price {
+      font-size: 1.2rem;
+      font-weight: 200;
+      position: absolute;
+      top: 26px;
+      right: 0;
+    }
+    .address {
+      font-size: 1.4rem;
+      line-height: 1.43;
+    }
+  }
+}

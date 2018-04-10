@@ -1,0 +1,165 @@
+/* base.scss (START) */
+
+@import '../config';
+* {
+	padding: 0;
+	margin: 0;
+}
+body, html {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	font-size: 10px;
+	line-height: 10px;
+	margin: 0;
+	padding: 0;
+	font-family: "Proxima Nova";
+    font-weight: 300;
+}
+
+h1 {font-size: 4rem; }
+h2 {font-size: 2.2rem; }
+h3 {font-size: 2rem; }
+h4 {font-size: 2rem; }
+h5 {font-size: 2rem; }
+h6 {font-size: 1rem; }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Proxima Nova";
+    line-height: 1.5;
+	font-weight: 600;
+    text-align: center;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	cursor: default;
+}
+
+p {
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	font-size: 1.6rem;
+	line-height: 1.5;
+	color: $dark;
+}
+
+img {
+	border: 0;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+
+blockquote {
+	border-left: 3px solid #afafaf;
+	padding-left: 10px;
+}
+
+.small-text {
+
+}
+
+div {vertical-align: top;}
+
+ul, ol {
+	list-style: none;
+	padding: 0;
+	margin: 0
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+:focus {
+	outline: 1px solid transparent;
+}
+
+a:link,
+a:visited,
+a:active {
+
+	transition: $transition;
+	line-height: 1em;
+    color: $blue;
+	text-decoration: none;
+
+	&:hover {
+      color: $blue-hover;
+	}
+
+	&:focus {
+		outline: 1px transparent;
+		outline-color: transparent;
+		outline-style: none;
+        color: $blue-active;
+	}
+
+}
+
+a[href^="mailto:"] {
+    background: url('') no-repeat center right;
+}
+
+a[href$=".pdf"] {
+    background: url('') no-repeat center right;
+}
+
+input[type=radio].css-checkbox {
+  position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+
+input[type=radio].css-checkbox + label.css-label {
+  padding-left: 25px;
+  height: 18px;
+  display:inline-block;
+  line-height: 23px;
+  background-repeat:no-repeat;
+  background-position: 0 0;
+  font-size: 1.4rem;
+  vertical-align:middle;
+  cursor: pointer;
+  color: $blue;
+
+}
+
+input[type=radio].css-checkbox:checked + label.css-label {
+  &:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: $blue;
+    border: solid 1px $blue;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    cursor: pointer;
+  }
+}
+label.css-label {
+  user-select: none;
+  position: relative;
+  transition: 0.2s;
+  cursor: pointer;
+  &:after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border: solid 1px $blue;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+  }
+}
+
+.index-page {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+/* base.scss (END) */

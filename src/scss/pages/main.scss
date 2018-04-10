@@ -1,0 +1,475 @@
+@import '../config';
+.main-content__wrap {
+  .main-content_block {
+    h2 {
+      font-weight: 600;
+      text-align: center;
+      color: $dark;
+    }
+    .top_slider_block {
+      ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        li {
+          position: relative;
+          width: 100%;
+        }
+        .image_block {
+          position: absolute;
+          z-index: -1;
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 40% 100% ;
+        }
+        .content-block {
+          color: $general-black;
+          max-width: 1280px;
+          box-sizing: border-box;
+          margin: 0 auto;
+          font-weight: 600;
+          &__button .btn.red {
+            font-size: 2rem;
+          }
+          &__html {
+            margin-bottom: 30px;
+            p {
+              margin-bottom: 10px;
+              b {
+                font-size: 3rem;
+                margin: 0 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .services_block {
+      box-sizing: border-box;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      .service_item {
+        height: 200px;
+        position: relative;
+        svg {
+          position: absolute;
+          transition: .3s;
+          z-index: 1;
+          path {
+
+          }
+        }
+        .name {
+          font-size: 2.2rem;
+          font-weight: 600;
+          line-height: 1.09;
+          color: $general-black;
+          transition: .3s;
+          position: relative;
+          z-index: 2;
+        }
+        .description {
+          font-size: 14px;
+          line-height: 1.43;
+          color: $white;
+          transition: .3s;
+          z-index: 2;
+          position: relative;
+        }
+        &:hover {
+          svg {
+
+          }
+          .name {
+
+          }
+          .description {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .digits_block {
+      max-width: 920px;
+      min-height: 185px;
+      background-color: $white;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border: 1px solid $tomato;
+      margin-top: 40px;
+      position: relative;
+      flex-wrap: wrap;
+      &:before {
+        position: absolute;
+        left: 50%;
+        padding: 0px 20px;
+        content: "Apetta";
+        color: #383838;
+        background: white;
+        top: -6px;
+        font-size: 1.8rem;
+        margin-left: -38px;
+        z-index: 2;
+      }
+      .digit_item {
+        text-align: center;
+        margin: 0 10px;
+        .count {
+          line-height: 5rem;
+          font-weight: bold;
+          white-space: nowrap;
+        }
+        .description {
+          font-size: 1.6rem;
+          line-height: 16px;
+        }
+      }
+    }
+    .products-slider__wrap {
+
+    }
+    .products-slider {
+      margin-top: 40px;
+      .products {
+        display: flex;
+        justify-content: center;
+        .product_item {
+          text-align: center;
+          width: 178px;
+
+          a {
+            color: $dark;
+          }
+          img {
+            max-height: 110px;
+            min-height: 110px;
+            margin: 0 auto;
+          }
+          .name {
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.33;
+          }
+          .price {
+            font-size: 1.8rem;
+            line-height: 1.67;
+          }
+        }
+      }
+      .show-all_block {
+        text-align: center;
+        margin-top: 50px;
+        a.btn {
+          padding: 16px 30px;
+        }
+      }
+    }
+    &.reviews_block--wrapper {
+      background: url(../img/group-7.jpg) top center no-repeat;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .reviews_block_more-btn {
+      margin: 35px auto;
+    }
+    .reviews_block {
+
+      .review__text {
+        padding: 30px;
+      }
+
+      max-width: 650px;
+      margin: 0 auto;
+      .review_item {
+        padding: 0 20px;
+        text-align: center;
+        margin-bottom: 36px;
+        .review__client-info {
+          position: relative;
+          .review__ava {
+            img {
+              width: 86px;
+              height: 86px;
+              border-radius: 50px;
+              margin: 0 auto;
+            }
+            .first-letter {
+              width: 54px;
+              height: 54px;
+              border-radius: 50px;
+              text-transform: uppercase;
+              font-size: 2.4rem;
+              color: #fff;
+              display: block;
+              line-height: 54px;
+              text-align: center;
+            }
+          }
+          .review__name-rating {
+            display: inline-block;
+            .review__name {
+              font-size: 1.6rem;
+              font-weight: 600;
+              line-height: 32px;
+            }
+            .review__rating {
+              margin-top: 5px;
+              height: 16px;
+              width: 111px;
+              .fill {
+                width: 14px;
+                height: 14px;
+                background: url("../img/rating-star-fill.svg") no-repeat;
+                display: inline-block;
+                margin-right: 6px;
+              }
+              .nofill {
+                width: 14px;
+                height: 14px;
+                background: url("../img/rating-star-nofill.svg") no-repeat;
+                display: inline-block;
+                margin-right: 6px;
+              }
+            }
+          }
+          .review__date {
+            color: $steel-grey;
+            font-size: 1.6rem;
+            line-height: 2;
+          }
+        }
+      }
+    }
+    .partners_block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .partners-item {
+        margin: 0 20px;
+      }
+    }
+    &.maps-block__wrap {
+      margin-bottom: 0;
+    }
+    .maps-block {
+      height: 560px;
+      position: relative;
+      .lineform {
+        width: 980px;
+        max-width: 98%;
+        margin: 0 auto;
+        padding-top: 30px;
+        z-index: 2;
+        position: relative;
+        .btn {
+          width: 50%;
+        }
+      }
+      .map {
+        width: 100%;
+        height: 560px;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+      }
+    }
+    &.subsribe_block--wrapper {
+      background: url('../img/e-mail.jpg');
+      .subsribe_block {
+        min-height: 394px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .title {
+          font-size: 4rem;
+          line-height: 5rem;
+          font-weight: 600;
+        }
+        .description {
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.33;
+        }
+        a.btn {
+          width: 78%;
+        }
+        .lineform {
+          width: 440px;
+          max-width: 98%;
+        }
+      }
+    }
+  }
+}
+
+//-----кастомный слайдер-----
+
+.top_slider_block {
+  .bx-wrapper .bx-pager {
+    text-align: center;
+    color: #fff;
+    padding-top: 0;
+    position: absolute;
+    bottom: 20px;
+  }
+  .bx-wrapper .bx-pager.bx-default-pager a {
+    background: #fff;
+    text-indent: -9999px;
+    display: block;
+    width: 50px;
+    height: 4px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    position: relative;
+  }
+  .bx-wrapper .bx-pager.bx-default-pager a::before {
+    content: " ";
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+  }
+  .bx-wrapper .bx-pager.bx-default-pager a:hover,
+  .bx-wrapper .bx-pager.bx-default-pager a.active,
+  .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #009ace;
+  }
+}
+
+//-----адаптив-----
+
+@media screen and (min-width: 1281px) {
+  .top_slider_block li {
+    .content-block__title {
+      font-size: 5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .top_slider_block li {
+    .content-block__title {
+        font-size: 4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .service_item {
+    .name {
+      padding-top: 50px;
+    }
+    .description {
+      opacity: 1;
+      padding-top: 18px;
+    }
+  }
+}
+
+@media screen and (min-width: 1021px) {
+  .service_item {
+    .description {
+      opacity: 0;
+    }
+    &:hover {
+      svg {
+        bottom: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .reviews_block--wrapper {
+    background: none;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .reviews_block--wrapper {
+    background: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .top_slider_block li {
+    height: 432px;
+    .content-block {
+      padding: 71px;
+      &__title {
+        line-height: 6rem;
+      }
+      &__button .btn {
+        padding: 20px 80px;
+      }
+      &__html {
+        font-size: 2.2rem;
+        min-height: 100px;
+        p {
+          font-size: 2.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top_slider_block li {
+    height: 274px;
+    .content-block {
+      text-align: center;
+      &__title {
+        font-size: 2.4rem;
+        line-height: 30px;
+        margin-top: 38px;
+      }
+      &__button .btn {
+        padding: 15px 55px;
+      }
+      &__html {
+        font-size: 1.8rem;
+        p {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .reviews_block {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-content__wrap {
+    .main-content_block {
+      &.subsribe_block--wrapper {
+        .subsribe_block .title {
+          font-size: 2.8rem;
+        }
+      }
+      .lineform {
+        flex-direction: column;
+        a.btn {
+          min-width: 100%;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
